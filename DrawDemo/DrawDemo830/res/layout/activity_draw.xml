@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.drawdemo830.MyView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.example.drawdemo830.MyView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:id="@+id/ra_temp_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="温度" />
+
+        <RadioButton
+            android:id="@+id/ra_hum_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湿度" />
+
+        <RadioButton
+            android:id="@+id/ra_gas_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="燃气" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup1" >
+    </ListView>
+
+    <ToggleButton
+        android:id="@+id/tg_draw_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup1"
+        android:layout_alignParentRight="true"
+        android:text="ToggleButton" />
+
+</RelativeLayout>
