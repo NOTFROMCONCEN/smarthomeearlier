@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/et_old_pass"
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10sp"
+        android:background="@drawable/editback"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="旧密码"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_new_pass"
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:layout_alignLeft="@+id/et_old_pass"
+        android:layout_below="@+id/et_old_pass"
+        android:background="@drawable/editback"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="新密码"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_updata_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_new_pass"
+        android:layout_alignRight="@+id/et_new_pass"
+        android:layout_below="@+id/et_new_pass"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/basetoggbuttonoff"
+        android:text="确定"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/iv_exit"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="33dp"
+        android:src="@drawable/exit" />
+
+</RelativeLayout>
