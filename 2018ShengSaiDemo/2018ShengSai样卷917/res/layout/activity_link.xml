@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="196dp" >
+
+        <RadioButton
+            android:id="@+id/ra_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="温度" />
+
+        <RadioButton
+            android:id="@+id/ra_smo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="烟雾" />
+
+        <RadioButton
+            android:id="@+id/ra_ill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="光照度" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_number_get"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="51dp"
+        android:layout_toRightOf="@+id/radioGroup1" >
+
+        <RadioButton
+            android:id="@+id/ra_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text=">" />
+
+        <RadioButton
+            android:id="@+id/ra_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt;" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb_warm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_number_get"
+        android:layout_marginLeft="84dp"
+        android:layout_toRightOf="@+id/et_number_get"
+        android:text="报警灯亮" />
+
+    <CheckBox
+        android:id="@+id/cb_fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb_warm"
+        android:layout_alignLeft="@+id/cb_warm"
+        android:text="风扇转" />
+
+    <CheckBox
+        android:id="@+id/cb_lamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioGroup1"
+        android:layout_alignLeft="@+id/cb_warm"
+        android:text="射灯开" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_lamp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/ra_hiuke_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="会客模式" />
+
+        <RadioButton
+            android:id="@+id/ra_shuimian_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="睡眠模式" />
+
+        <RadioButton
+            android:id="@+id/ra_fangdao_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="防盗模式" />
+    </RadioGroup>
+
+</RelativeLayout>
