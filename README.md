@@ -1,4 +1,5 @@
-# smarthomeDemo
+# 智能家居控制系统（技能大赛）赛题Demo备份
+![输入图片说明](https://cloudssd.oss-cn-shenzhen.aliyuncs.com/test/0072Vf1pgy1fodqmsvzjij31630rsu0x.jpg?Expires=1571276055&OSSAccessKeyId=TMP.hchwuVuG3H5CnpMp4oXB1oYippr8ok9Q1DiQyVXS9gutVSnGyxHfi1WPUtLog6TnutgFFD7p377hHwf5LeCDonW27QUsPkAoUG7WV6TsvGaqXyPwca1BMmfU1qcut1.tmp&Signature=p2CrrK4Aov0YK7ufOKHN31Muh4U%3D "在这里输入图片标题")
 
 #### 介绍
 {**以下是码云平台说明，您可以替换此简介**
