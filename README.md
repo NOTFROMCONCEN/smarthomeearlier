@@ -1,40 +1,11 @@
 # 智能家居控制系统（技能大赛）赛题Demo备份
-![输入图片说明](https://cloudssd.oss-cn-shenzhen.aliyuncs.com/test/0072Vf1pgy1fodqmsvzjij31630rsu0x.jpg?Expires=1571276055&OSSAccessKeyId=TMP.hchwuVuG3H5CnpMp4oXB1oYippr8ok9Q1DiQyVXS9gutVSnGyxHfi1WPUtLog6TnutgFFD7p377hHwf5LeCDonW27QUsPkAoUG7WV6TsvGaqXyPwca1BMmfU1qcut1.tmp&Signature=p2CrrK4Aov0YK7ufOKHN31Muh4U%3D "在这里输入图片标题")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1017/083616_31beb0b7_5236363.jpeg "在这里输入图片标题")
 
 #### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+个人博客：[点我](https://47.96.188.93/)
 
 #### 软件架构
-软件架构说明
+Android 4.x 
 
-
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### 编译器
+Eclipse
