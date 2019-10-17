@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.drawdemo1003.myview.MyView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.example.drawdemo1003.myview.MyView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:id="@+id/ra_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="温度" />
+
+        <RadioButton
+            android:id="@+id/ra_smo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="烟雾" />
+
+        <RadioButton
+            android:id="@+id/ra_ill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="光照" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="300sp"
+        android:layout_height="150sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+    </ListView>
+
+</RelativeLayout>

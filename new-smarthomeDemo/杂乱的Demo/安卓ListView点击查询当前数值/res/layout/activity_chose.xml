@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_updata_sqlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新数据库" />
+
+    <Button
+        android:id="@+id/btn_intent_sqlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据库" />
+
+    <Button
+        android:id="@+id/btn_intent_setstring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设定值" />
+
+    <Button
+        android:id="@+id/btn_intent_dialog_setstring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击弹出Dialog（设定值）" />
+
+    <Button
+        android:id="@+id/btn_intent_dialog_setsqlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击弹出Dialog（数据库）" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实例功能" />
+
+</LinearLayout>

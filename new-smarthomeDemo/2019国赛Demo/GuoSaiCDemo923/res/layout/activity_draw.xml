@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.guosaicdemo923.MyView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.example.guosaicdemo923.MyView>
+
+    <TextView
+        android:id="@+id/tv_draw_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:text="温度"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_above="@+id/tv_draw_time"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="43dp"
+        android:layout_marginLeft="362dp"
+        android:background="#3399FF" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="116dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="#FD0000" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:text="光照"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/rg_check_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:id="@+id/ra_test_number_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试数值"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/ra_temp_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温度"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/ra_hum_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湿度"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/ra_ill_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="光照"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/ra_gas_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="燃气"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/ra_press_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="气压"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/ra_smo_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="烟雾"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/ra_pm_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="PM2.5"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/ra_co_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Co2"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/ra_per_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人体红外"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+</RelativeLayout>

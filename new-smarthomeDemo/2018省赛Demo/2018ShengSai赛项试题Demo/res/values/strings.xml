@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">2018ShengSai赛项试题Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string-array name="big_small">
+        <item>></item>
+        <item>&lt;</item>
+        <item>=</item>
+    </string-array>
+
+</resources>

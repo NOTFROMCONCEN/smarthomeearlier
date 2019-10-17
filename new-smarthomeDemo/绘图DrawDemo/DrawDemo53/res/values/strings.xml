@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DrawDemo53</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_section1">基本</string>
+    <string name="title_section2">联动</string>
+    <string name="title_section3">模式</string>
+    <string name="title_section4">绘图</string>
+
+    <string-array name="big_small">
+        <item>></item>
+        <item>&lt;</item>
+    </string-array>
+    <string-array name="temp_hum_smo">
+        <item>温度</item>
+        <item>烟雾</item>
+    </string-array>
+    <string-array name="lamp_warm">
+        <item>射灯全开</item>
+        <item>报警灯开</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModeActivity" >
+
+    <RadioGroup
+        android:id="@+id/rg_oncheck_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="112dp"
+        android:layout_marginLeft="256dp" >
+
+        <RadioButton
+            android:id="@+id/ra_day_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="白天模式" />
+
+        <RadioButton
+            android:id="@+id/ra_night_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="夜晚模式" />
+
+        <RadioButton
+            android:id="@+id/ra_dance_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌舞模式" />
+
+        <RadioButton
+            android:id="@+id/ra_fangdao_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="防盗模式" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/tg_mode_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rg_oncheck_mode"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/rg_oncheck_mode"
+        android:text="ToggleButton" />
+
+</RelativeLayout>

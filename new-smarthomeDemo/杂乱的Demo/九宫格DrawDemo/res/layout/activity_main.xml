@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.example.jiugonggedrawdemo.NineView
+        android:id="@+id/myview"
+        android:layout_width="280sp"
+        android:layout_height="300sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#3399FF" />
+
+</RelativeLayout>

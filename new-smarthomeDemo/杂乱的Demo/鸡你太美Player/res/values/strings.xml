@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">快手破解VIP快速刷粉</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string-array name="music">
+        <item>刷粉丝</item>
+        <item>刷赞</item>
+        <item>不用花钱给爱豆刷礼物</item>
+    </string-array>
+
+</resources>

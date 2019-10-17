@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">各种绘图Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">这个按钮真的没什么用处</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.drawdemo50.MyView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.example.drawdemo50.MyView>
+
+    <RadioGroup
+        android:id="@+id/rg_draw_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <RadioButton
+            android:id="@+id/ra_temp"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="温度" />
+
+        <RadioButton
+            android:id="@+id/ra_hum"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="湿度" />
+
+        <RadioButton
+            android:id="@+id/ra_gas"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="燃气" />
+
+        <RadioButton
+            android:id="@+id/ra_press"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="气压" />
+
+        <RadioButton
+            android:id="@+id/ra_smo"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="烟雾" />
+
+        <RadioButton
+            android:id="@+id/ra_ill"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="光照" />
+
+        <RadioButton
+            android:id="@+id/ra_pm"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="PM2.5" />
+
+        <RadioButton
+            android:id="@+id/ra_co"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="CO2" />
+
+        <RadioButton
+            android:id="@+id/ra_test1"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="测试1" />
+
+        <RadioButton
+            android:id="@+id/ra_test2"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="测试2" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/tg_draw_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rg_draw_check"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rg_draw_check"
+        android:text="ToggleButton" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/rg_draw_check" >
+    </ListView>
+
+</RelativeLayout>

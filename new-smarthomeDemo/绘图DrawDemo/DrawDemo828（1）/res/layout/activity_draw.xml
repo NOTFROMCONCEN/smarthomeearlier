@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.example.drawdemo824.MyView
+            android:id="@+id/myview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.example.drawdemo824.MyView>
+
+        <RadioGroup
+            android:id="@+id/rg_draw_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <RadioButton
+                android:id="@+id/ra_draw_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="温度" />
+
+            <RadioButton
+                android:id="@+id/ra_draw_hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度" />
+
+            <RadioButton
+                android:id="@+id/ra_draw_press"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="气压" />
+        </RadioGroup>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rg_draw_check" >
+
+        </ListView>
+
+        <ToggleButton
+            android:id="@+id/tg_draw_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rg_draw_check"
+            android:layout_alignParentRight="true"
+            android:text="ToggleButton" />
+
+    </RelativeLayout>
+
+</LinearLayout>

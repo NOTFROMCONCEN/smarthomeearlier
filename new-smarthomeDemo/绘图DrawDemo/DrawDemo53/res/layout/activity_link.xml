@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_open_ill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当光照度" />
+
+        <Spinner
+            android:id="@+id/sp_ill_big_small"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:entries="@array/big_small" />
+
+        <EditText
+            android:id="@+id/et_num_ill"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/sp_ill"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:entries="@array/lamp_warm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_open_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当" />
+
+        <Spinner
+            android:id="@+id/sp_fan"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:entries="@array/temp_hum_smo" />
+
+        <Spinner
+            android:id="@+id/sp_fan_big_small"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:entries="@array/big_small" />
+
+        <EditText
+            android:id="@+id/et_num_fan"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开风扇"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+</RelativeLayout>

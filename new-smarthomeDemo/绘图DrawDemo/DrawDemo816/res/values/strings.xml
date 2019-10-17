@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DrawDemo816</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string-array name="big_small">
+        <item>></item>
+        <item>&lt;</item>
+    </string-array>
+    <string-array name="temp_hum">
+        <item>温度</item>
+        <item>湿度</item>
+    </string-array>
+
+</resources>

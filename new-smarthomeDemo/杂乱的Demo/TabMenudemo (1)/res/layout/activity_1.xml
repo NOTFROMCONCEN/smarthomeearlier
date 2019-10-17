@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/cb_lamp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="射灯" />
+
+        <CheckBox
+            android:id="@+id/cb_door"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="门禁" />
+
+        <CheckBox
+            android:id="@+id/cb_fan"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="风扇" />
+
+        <CheckBox
+            android:id="@+id/cb_wram"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="报警灯" />
+
+        <CheckBox
+            android:id="@+id/cb_cur"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="窗帘" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/ra_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度" />
+
+            <RadioButton
+                android:id="@+id/ra_hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度" />
+
+            <RadioButton
+                android:id="@+id/ra_gas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="燃气" />
+
+            <RadioButton
+                android:id="@+id/ra_press"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="气压" />
+
+            <RadioButton
+                android:id="@+id/ra_smo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="烟雾" />
+
+            <RadioButton
+                android:id="@+id/ra_ill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="光照" />
+
+            <RadioButton
+                android:id="@+id/ra_co"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Co2" />
+
+            <RadioButton
+                android:id="@+id/ra_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM2.5" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/RadioGroup01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/ra_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大于" />
+
+            <RadioButton
+                android:id="@+id/ra_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小于" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/linearLayout2"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/RadioGroup02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/ra_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打开" />
+
+            <RadioButton
+                android:id="@+id/ra_cls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关闭" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/sw_link_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_num"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

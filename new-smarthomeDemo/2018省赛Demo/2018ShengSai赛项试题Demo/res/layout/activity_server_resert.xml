@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="端口号："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/et_resert_port"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/server_resert_back"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP地址："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/et_resert_ip"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/server_resert_back"
+        android:ems="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_server_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_back"
+            android:text="设    置"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="0"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_column="0"
+            android:layout_gravity="right|top"
+            android:layout_row="0"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="1"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_column="0"
+            android:layout_gravity="right|top"
+            android:layout_row="1"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="2"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="2"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_column="0"
+            android:layout_gravity="right|top"
+            android:layout_row="2"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="3"
+            android:text="0" />
+    </GridLayout>
+
+</LinearLayout>

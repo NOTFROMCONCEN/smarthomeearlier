@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DrawDemo1003</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_section1">数据采集和设备控制</string>
+    <string name="title_section2">联动控制和模式管理</string>
+    <string name="title_section3">历史传感器数据绘制</string>
+
+</resources>

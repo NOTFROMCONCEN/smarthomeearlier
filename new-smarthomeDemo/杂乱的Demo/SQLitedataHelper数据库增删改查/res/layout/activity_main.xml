@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="常用功能："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_main_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="登录功能" />
+
+    <Button
+        android:id="@+id/btn_main_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_main_login"
+        android:layout_alignBottom="@+id/btn_main_login"
+        android:layout_toRightOf="@+id/btn_main_login"
+        android:text="注册功能" />
+
+    <Button
+        android:id="@+id/btn_main_updata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_main_reg"
+        android:layout_alignBottom="@+id/btn_main_reg"
+        android:layout_toRightOf="@+id/btn_main_reg"
+        android:text="修改密码功能" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_main_login"
+        android:text="详细拆分："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_main_sqladd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:text="数据库的增加" />
+
+    <Button
+        android:id="@+id/btn_main_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_main_updata"
+        android:layout_alignBottom="@+id/btn_main_updata"
+        android:layout_toRightOf="@+id/btn_main_updata"
+        android:text="账户管理" />
+
+    <Button
+        android:id="@+id/btn_main_sqldelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_main_sqladd"
+        android:layout_alignBottom="@+id/btn_main_sqladd"
+        android:layout_toRightOf="@+id/btn_main_sqladd"
+        android:text="数据库的删除" />
+
+    <Button
+        android:id="@+id/btn_main_sqlsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_main_sqldelete"
+        android:layout_alignBottom="@+id/btn_main_sqldelete"
+        android:layout_toRightOf="@+id/btn_main_sqldelete"
+        android:text="数据库的查询" />
+
+    <TextView
+        android:id="@+id/tv_main_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="TextView" />
+
+</RelativeLayout>

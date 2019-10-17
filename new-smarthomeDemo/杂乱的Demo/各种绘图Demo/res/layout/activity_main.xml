@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/re_zhuzhuangtu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" >
+
+        <ToggleButton
+            android:id="@+id/tg_draw_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="ToggleButton" />
+
+        <LinearLayout
+            android:id="@+id/line_zhuzhuangtu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/activity_draw_zhuzhuangtu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_zhexiantu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <com.example.drawnotextdemo.MyView_01
+                android:id="@+id/myview_01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.example.drawnotextdemo.MyView_01>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tg_draw_start" >
+
+            <RadioButton
+                android:id="@+id/ra_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="温度" />
+
+            <RadioButton
+                android:id="@+id/ra_hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度" />
+
+            <RadioButton
+                android:id="@+id/ra_gas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="燃气" />
+        </RadioGroup>
+
+        <ListView
+            android:id="@+id/listView_zhuzhuangtu"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:stackFromBottom="true" >
+        </ListView>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/ra_draw_zhexian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="折线图" />
+
+        <RadioButton
+            android:id="@+id/ra_draw_zhuzhuangtu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柱状图" />
+
+        <RadioButton
+            android:id="@+id/ra_draw_bingzhuangtu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="饼状图" />
+    </RadioGroup>
+
+</RelativeLayout>

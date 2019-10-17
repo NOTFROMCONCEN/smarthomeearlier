@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4" >
+
+    <ListView
+        android:id="@+id/lv_sqlite"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="187dp"
+        android:layout_marginTop="22dp" >
+    </ListView>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="90sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lv_sqlite"
+        android:layout_below="@+id/lv_sqlite"
+        android:entries="@array/sqlite_chuanganqi" />
+
+    <Button
+        android:id="@+id/btn_sqlite_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lv_sqlite"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="253dp"
+        android:layout_toLeftOf="@+id/lv_sqlite"
+        android:text="查找" />
+
+</RelativeLayout>

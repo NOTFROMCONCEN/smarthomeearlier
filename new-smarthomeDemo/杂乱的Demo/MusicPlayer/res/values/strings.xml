@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MusicPlayer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string-array name="music">
+        <item>鸡你太美</item>
+        <item>台词</item>
+        <item>Othres</item>
+    </string-array>
+
+</resources>
