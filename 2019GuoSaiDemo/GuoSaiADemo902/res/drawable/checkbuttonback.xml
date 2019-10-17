@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- 复选框按钮 -->
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@drawable/checkbuttonbackoff" android:state_checked="true"></item>
-    <item android:drawable="@drawable/checkbuttonbackopen" android:state_checked="false"></item>
-
-</selector>
