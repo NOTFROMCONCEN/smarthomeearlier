@@ -1,36 +1,8 @@
-# smarthomeDemo
+# 智能家居控制系统（技能大赛）赛题Demo备份
 
-#### Description
-{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}
+| 时间 | 版本 | 上传？ | 删除？ | 移动？ |
+| ---- | ---- | ------ | ------ | ------ |
+|2019/10/18|1.2|更新文件夹、新加18、19为解决问题小计|无|无
+|2019/10/17|1.1|上传最新版本（10/17）将国赛省赛Demo最新版更新到10月，并删除旧文件节省空间和Git速度|删除根目录下17、18、19省赛国赛题目|无|
+|2019/10/15|1.0|上传最初版本|无|无|
 
-#### Software Architecture
-Software architecture description
-
-#### Installation
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### Instructions
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### Contribution
-
-1. Fork the repository
-2. Create Feat_xxx branch
-3. Commit your code
-4. Create Pull Request
-
-
-#### Gitee Feature
-
-1. You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2. Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3. Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4. The most valuable open source project [GVP](https://gitee.com/gvp)
-5. The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6. The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
