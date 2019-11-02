@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bja"
+    tools:context=".ResActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/logb" />
+
+    <EditText
+        android:id="@+id/etname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="请输入账号"
+        android:textColorHint="#FFF" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/etname2"
+        android:layout_alignLeft="@+id/etname2"
+        android:background="#FFF" />
+
+    <EditText
+        android:id="@+id/etpwd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="109dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:textColorHint="#FFF" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/etpwd2"
+        android:layout_below="@+id/etpwd2"
+        android:background="#FFF" />
+
+    <EditText
+        android:id="@+id/etqrpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="请再次输入密码"
+        android:textColorHint="#FFF" />
+
+    <Button
+        android:id="@+id/btndl2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:background="#00000000"
+        android:text="登录"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btnres2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btndl2"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn"
+        android:text="注册"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/etqrpwd"
+        android:background="#FFF" />
+
+</RelativeLayout>

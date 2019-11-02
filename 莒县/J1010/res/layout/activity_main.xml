@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_l"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="261dp"
+        android:layout_marginTop="169dp"
+        android:text="IP地址："
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:text="12.1.6.2"
+        android:textColor="#fff" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/butdl"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="34dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="登录"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/Butck"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/butdl"
+        android:layout_alignBottom="@+id/butdl"
+        android:layout_marginLeft="57dp"
+        android:layout_toRightOf="@+id/butdl"
+        android:text="查看数据库"
+        android:textColor="#fff" />
+
+</RelativeLayout>

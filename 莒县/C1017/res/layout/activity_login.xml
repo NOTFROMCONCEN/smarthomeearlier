@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+
+    <TextView
+        android:id="@+id/teshan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="293dp"
+        android:layout_marginTop="83dp"
+        android:text="加载完毕，请登录......"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignRight="@+id/teshan"
+        android:layout_marginBottom="29dp"
+        android:layout_marginRight="194dp"
+        android:text="用户名："
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:text="端口号："
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView01"
+        android:layout_toRightOf="@+id/TextView01"
+        android:ems="10"
+        android:text="bizideal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Edduankou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_toRightOf="@+id/TextView01"
+        android:ems="10"
+        android:text="6006" />
+
+    <Button
+        android:id="@+id/butdl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edpwd"
+        android:layout_below="@+id/Edpwd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="21dp"
+        android:text="登录" />
+    <com.example.c1017.time
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Edpwd"
+        android:layout_alignLeft="@+id/TextView02"
+        android:text="密码："
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Edpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edip"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/TextView02"
+        android:ems="10"
+        android:password="true"
+        android:text="123456" />
+
+    <EditText
+        android:id="@+id/Edip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edduankou"
+        android:layout_below="@+id/Edduankou"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:text="18.1.10.7" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Edip"
+        android:layout_alignLeft="@+id/TextView01"
+        android:text="IP地址："
+        android:textSize="20sp" />
+
+</RelativeLayout>

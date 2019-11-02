@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_1"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="151dp"
+        android:layout_marginTop="100dp"
+        android:text="IP地址："
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="151dp"
+        android:layout_marginTop="143dp"
+        android:text="端口号："
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/TextView01"
+        android:ems="10"
+        android:text="19.1.5.2" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Edduankou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_toRightOf="@+id/TextView01"
+        android:ems="10"
+        android:text="6006" />
+
+    <EditText
+        android:id="@+id/Edpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView03"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_toRightOf="@+id/TextView01"
+        android:ems="10"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/butdl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView03"
+        android:layout_below="@+id/Edpwd"
+        android:layout_marginTop="31dp"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/Butzc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/butdl"
+        android:layout_alignBottom="@+id/butdl"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/Butxg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/butdl"
+        android:layout_alignBottom="@+id/butdl"
+        android:layout_alignRight="@+id/Edpwd"
+        android:layout_marginRight="46dp"
+        android:text="修改密码" />
+
+    <Button
+        android:id="@+id/Butzh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butzc"
+        android:layout_alignBottom="@+id/Butzc"
+        android:layout_toRightOf="@+id/Edpwd"
+        android:text="找回密码" />
+
+    <CheckBox
+        android:id="@+id/chjz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Edpwd"
+        android:layout_alignLeft="@+id/Butzh"
+        android:layout_marginLeft="41dp"
+        android:text="记住密码" />
+
+    <Spinner
+        android:id="@+id/spname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_centerVertical="true"
+        android:text="账号："
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="23dp"
+        android:text="密码："
+        android:textSize="25sp" />
+
+    <RadioButton
+        android:id="@+id/Rashur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Edpwd"
+        android:layout_alignLeft="@+id/chjz"
+        android:text="输入账号" />
+
+    <RadioButton
+        android:id="@+id/raxz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Rashur"
+        android:layout_alignLeft="@+id/Rashur"
+        android:text="选择账号" />
+
+</RelativeLayout>

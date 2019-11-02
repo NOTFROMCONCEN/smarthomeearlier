@@ -1,0 +1,371 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_3"
+    tools:context=".JibenActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/Litemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/temp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ligas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Litemp"
+        android:layout_marginLeft="200dp"
+        android:layout_toRightOf="@+id/Litemp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gas" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Liill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ImageView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ill" />
+
+        <TextView
+            android:id="@+id/text54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lico2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Liill"
+        android:layout_marginLeft="72dp"
+        android:layout_toRightOf="@+id/Liill"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ImageView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/co2" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Liair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Ligas"
+        android:layout_alignTop="@+id/Liill"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ImageView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/air" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lipm25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Lico2"
+        android:layout_below="@+id/Lico2"
+        android:layout_marginTop="53dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ImageView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pm25" />
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Liman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Liair"
+        android:layout_alignTop="@+id/Lismoke"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ImageView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/man" />
+
+        <TextView
+            android:id="@+id/text9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无人"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lihum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Lico2"
+        android:layout_alignTop="@+id/Ligas"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/humidity" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Imlamp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Imbjd"
+        android:layout_marginRight="204dp"
+        android:src="@drawable/lamp_b" />
+
+    <ImageView
+        android:id="@+id/Imfan"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Imdoor"
+        android:layout_marginRight="67dp"
+        android:src="@drawable/fan_b" />
+
+    <ImageView
+        android:id="@+id/Imcllogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Ligas"
+        android:layout_alignLeft="@+id/Imdoor"
+        android:src="@drawable/cllogo" />
+
+    <ImageView
+        android:id="@+id/Imclk"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignRight="@+id/Imdoor"
+        android:layout_alignTop="@+id/Imclt"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/clk_b" />
+
+    <ImageView
+        android:id="@+id/Imcllg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/Imlamp"
+        android:layout_alignTop="@+id/Imclt"
+        android:layout_marginLeft="27dp"
+        android:src="@drawable/clg_b" />
+
+    <ImageView
+        android:id="@+id/Imclt"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/Imcllogo"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/Imclk"
+        android:src="@drawable/clt_b" />
+
+    <ImageView
+        android:id="@+id/Imhw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Imcllogo"
+        android:layout_below="@+id/Liair"
+        android:src="@drawable/hwlogo" />
+
+    <LinearLayout
+        android:id="@+id/Litd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Liman"
+        android:layout_toLeftOf="@+id/Imhw"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/Imtd1"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tb_b" />
+
+        <ImageView
+            android:id="@+id/Imtv"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:src="@drawable/tv_b" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Imbjd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/Imcllogo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bjd_b" />
+
+    <ImageView
+        android:id="@+id/Imdoor"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/Imcllogo"
+        android:layout_marginLeft="58dp"
+        android:layout_toRightOf="@+id/Imbjd"
+        android:src="@drawable/door_b" />
+
+    <LinearLayout
+        android:id="@+id/Litd3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Imfan"
+        android:layout_alignTop="@+id/Litd2"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/Imtd3"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tb3_b" />
+
+        <ImageView
+            android:id="@+id/Imkt"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:src="@drawable/kt_b" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Litd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Imhw"
+        android:layout_alignTop="@+id/Litd1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/Imtd2"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tb2_b" />
+
+        <ImageView
+            android:id="@+id/Imdvd"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:src="@drawable/dvd_b" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lismoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Lipm25"
+        android:layout_toLeftOf="@+id/Lico2"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ImageView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/smoke" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

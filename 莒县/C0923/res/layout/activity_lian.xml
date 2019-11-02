@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LianActivity" >
+
+    <Spinner
+        android:id="@+id/spws"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:entries="@array/ws" />
+
+    <Spinner
+        android:id="@+id/Spdx"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/spws"
+        android:entries="@array/dx" />
+
+    <EditText
+        android:id="@+id/edlian"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Spdx"
+        android:layout_toRightOf="@+id/Spdx"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Edfen"
+        android:layout_toRightOf="@+id/Edfen"
+        android:text="分"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/Edfen"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edlian"
+        android:layout_alignBottom="@+id/edlian"
+        android:layout_toRightOf="@+id/edlian"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/butlian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="开启联动" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/spws"
+        android:layout_below="@+id/butlian"
+        android:layout_marginTop="55dp"
+        android:text="报警灯："
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_alignRight="@+id/edlian"
+        android:layout_marginRight="30dp"
+        android:text="风扇："
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/Switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_marginLeft="58dp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="42dp"
+        android:text="射灯："
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/Switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView02"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Switch3"
+        android:layout_alignBottom="@+id/Switch3"
+        android:layout_alignLeft="@+id/TextView01"
+        android:text="门禁："
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/Switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView03"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_toRightOf="@+id/TextView03" />
+
+    <TextView
+        android:id="@+id/tejishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView03"
+        android:layout_below="@+id/Switch4"
+        android:layout_marginTop="67dp"
+        android:text="联动模式还有X分X秒"
+        android:textSize="25sp" />
+    
+    <com.example.c0923.time
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp" />
+
+</RelativeLayout>

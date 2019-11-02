@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d_bj"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="317dp"
+        android:layout_marginTop="83dp"
+        android:src="@drawable/d_dl" />
+
+    <Button
+        android:id="@+id/butdl"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chjz"
+        android:layout_below="@+id/chjz"
+        android:layout_marginLeft="50dp"
+        android:background="#0000ff"
+        android:text="登录" />
+
+    <TextView
+        android:id="@+id/textZc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butdl"
+        android:layout_below="@+id/butdl"
+        android:layout_marginLeft="23dp"
+        android:text="  注册"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:ems="10"
+        android:hint="请输入账号"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/Edpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edname"
+        android:layout_below="@+id/edname"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:textColor="#fff" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Edip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edpwd"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="请输入IP"
+        android:text="19.1.10.2"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/chjz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edip"
+        android:layout_below="@+id/Edip"
+        android:text="记住密码"
+        android:textColor="#fff" />
+
+</RelativeLayout>

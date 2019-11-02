@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    tools:context=".ResActivity" >
+
+    <ImageView
+        android:id="@+id/imzca"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/qqa" />
+
+    <ImageView
+        android:id="@+id/Imzcb"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="308dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/yha" />
+
+    <ImageView
+        android:id="@+id/Imzcc"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Imzcb"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="66dp"
+        android:src="@drawable/qq" />
+
+    <ImageView
+        android:id="@+id/Imzcd"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/Imzcb"
+        android:layout_below="@+id/Imzcb"
+        android:layout_marginTop="67dp"
+        android:src="@drawable/yh" />
+
+    <Button
+        android:id="@+id/butzc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Imzcd"
+        android:layout_marginLeft="122dp"
+        android:layout_toRightOf="@+id/Imzcb"
+        android:background="@drawable/bai"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/Butfan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Imzcc"
+        android:layout_marginLeft="121dp"
+        android:layout_toRightOf="@+id/Imzcd"
+        android:background="@drawable/bai"
+        android:text="返回" />
+
+    <TextView
+        android:id="@+id/tetishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Imzcd"
+        android:layout_below="@+id/Imzcd"
+        android:layout_marginTop="48dp"
+        android:text="正在注册用户信息。。。。。"
+        android:textSize="25sp" />
+
+</RelativeLayout>

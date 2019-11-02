@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imyha"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/Imyhb"
+        android:layout_marginRight="104dp"
+        android:layout_toLeftOf="@+id/Imyhb"
+        android:src="@drawable/yha" />
+
+    <ImageView
+        android:id="@+id/Imyhb"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="385dp"
+        android:layout_marginTop="102dp"
+        android:src="@drawable/yh" />
+
+    <TextView
+        android:id="@+id/texian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Imyhb"
+        android:layout_below="@+id/imyha"
+        android:layout_marginTop="57dp"
+        android:text="正在校验用户信息。。。。。。"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imzc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="38dp"
+        android:layout_toLeftOf="@+id/Imyhb"
+        android:src="@drawable/zc" />
+
+</RelativeLayout>

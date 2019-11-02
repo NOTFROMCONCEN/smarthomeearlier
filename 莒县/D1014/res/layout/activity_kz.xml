@@ -1,0 +1,347 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d_bj"
+    tools:context=".KzActivity" >
+
+    <ImageView
+        android:id="@+id/imkzf"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:src="@drawable/d_fh" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/imkzf"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="58dp"
+        android:src="@drawable/d_sb" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignRight="@+id/ImageView01"
+        android:layout_below="@+id/imkzf"
+        android:background="@drawable/d_bj2" >
+
+        <ImageView
+            android:id="@+id/imlamp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/d_lamp1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="射灯"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/Imlampkg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/d_g" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/ImageView01"
+        android:layout_marginLeft="61dp"
+        android:layout_toRightOf="@+id/ImageView01"
+        android:background="@drawable/d_bj2" >
+
+        <ImageView
+            android:id="@+id/Imdoor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/d_mj1" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="门禁"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/Imdoorkg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/d_g" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/ImageView01"
+        android:layout_marginLeft="298dp"
+        android:layout_toRightOf="@+id/ImageView01"
+        android:background="@drawable/d_bj2" >
+
+        <ImageView
+            android:id="@+id/Imfan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/d_fan1" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="风扇"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/Imfankg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/d_g" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout6"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/frameLayout1"
+        android:layout_marginRight="109dp"
+        android:background="@drawable/d_bj2" >
+
+        <ImageView
+            android:id="@+id/Imbjd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/d_bjd1" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="报警灯"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/Imbjdkg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/d_g" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/frameLayout1"
+        android:background="@drawable/d_bj2" >
+
+        <ImageView
+            android:id="@+id/imtv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/d_tv1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:text="电视机"
+            android:textColor="#fff"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/Imtvg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/d_hwg" />
+
+        <ImageView
+            android:id="@+id/Imtvk"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/d_hwk" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/frameLayout4"
+        android:layout_alignTop="@+id/frameLayout3"
+        android:background="@drawable/d_bj2" >
+
+        <ImageView
+            android:id="@+id/Imcl"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/d_cl1" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:text="  窗帘"
+            android:textColor="#fff"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/Imaclk"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/d_clk" />
+        <ImageView
+            android:id="@+id/Imaclt"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/d_clt" />
+        <ImageView
+            android:id="@+id/Imaclg"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/d_clg" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/frameLayout1"
+        android:layout_alignTop="@+id/frameLayout3"
+        android:background="@drawable/d_bj2" >
+
+        <ImageView
+            android:id="@+id/Imdvd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/d_dvd1" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:text="  DVD"
+            android:textColor="#fff"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/Imdvdg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/d_hwg" />
+
+        <ImageView
+            android:id="@+id/Imdvdk"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/d_hwk" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/frameLayout6"
+        android:layout_alignTop="@+id/frameLayout5"
+        android:background="@drawable/d_bj2" >
+
+        <ImageView
+            android:id="@+id/Imkt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/d_kt1" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:text="  空调"
+            android:textColor="#fff"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/Imktg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/d_hwg" />
+
+        <ImageView
+            android:id="@+id/Imktk"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/d_hwk" />
+    </FrameLayout>
+
+</RelativeLayout>

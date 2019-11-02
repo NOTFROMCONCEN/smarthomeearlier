@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_03"
+    tools:context=".MoshiActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="121dp"
+        android:text="上班模式"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="121dp"
+        android:text="睡眠模式"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_centerVertical="true"
+        android:text="下班模式"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/chsb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <CheckBox
+        android:id="@+id/Chxb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/chsb" />
+
+    <CheckBox
+        android:id="@+id/Chsm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_alignLeft="@+id/chsb" />
+
+    <TextView
+        android:id="@+id/tesb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chsb"
+        android:layout_marginLeft="89dp"
+        android:layout_toRightOf="@+id/chsb"
+        android:text="窗帘关，如果人体红外检测有人，则窗帘开，射灯闪烁"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Texb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Chxb"
+        android:layout_marginLeft="89dp"
+        android:layout_toRightOf="@+id/Chxb"
+        android:text="射灯开，空调开，如果烟雾值大于600风扇开，否则风扇关"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Tesm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Chsm"
+        android:layout_alignBottom="@+id/Chsm"
+        android:layout_alignLeft="@+id/tesb"
+        android:text="窗帘关，如果人体红外检测有人报警灯开，射灯开"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <com.example.j0826.Myview
+        android:id="@+id/myview"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="66dp" />
+
+</RelativeLayout>

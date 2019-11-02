@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_1"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/Tejishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="129dp"
+        android:layout_marginLeft="275dp"
+        android:text="5秒后进入登录界面。。。。。。"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imlogo"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/Tejishi"
+        android:layout_alignLeft="@+id/Tejishi"
+        android:layout_marginBottom="123dp"
+        android:layout_marginLeft="99dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

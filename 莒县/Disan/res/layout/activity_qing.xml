@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg6"
+    tools:context=".QIngActivity" >
+
+    <CheckBox
+        android:id="@+id/checkaf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="32dp" />
+
+    <CheckBox
+        android:id="@+id/checklj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/CheckedTextlijia"
+        android:layout_alignLeft="@+id/checkaf" />
+
+    <CheckedTextView
+        android:id="@+id/CheckedTextlijia"
+        android:layout_width="980dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/checkedanfang"
+        android:layout_below="@+id/checkaf"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/baise"
+        android:paddingLeft="10dp"
+        android:text="离家模式"
+        android:textColor="#FFF"
+        android:textSize="25dp" />
+    <CheckedTextView
+        android:id="@+id/CheckedTextView01"
+        android:layout_width="980dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/checkedanfang"
+        android:layout_below="@+id/checkaf"
+        android:layout_marginTop="79dp"
+        android:background="@drawable/baise"
+        android:paddingLeft="10dp"
+        android:text="自定义模式"
+        android:textColor="#FFF"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkzdy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/CheckedTextView01"
+        android:layout_alignLeft="@+id/checkaf" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckedTextView01"
+        android:layout_below="@+id/CheckedTextView01"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="54dp"
+        android:text="温度"
+        android:textColor="#FFF"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:entries="@array/dx" />
+
+    <EditText
+        android:id="@+id/editlian"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/spinner1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Switch
+        android:id="@+id/swlian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner1"
+        android:layout_toRightOf="@+id/editlian" />
+
+    <CheckedTextView
+        android:id="@+id/checkedanfang"
+        android:layout_width="980dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/CheckedTextlijia"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/baise"
+        android:paddingLeft="10dp"
+        android:text="安防模式"
+        android:textColor="#FFF"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/ch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/editlian"
+        android:layout_marginTop="30dp"
+        android:text="射灯"
+        android:textColor="#FFF" />
+
+    <CheckBox
+        android:id="@+id/Ch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editlian"
+        android:layout_below="@+id/editlian"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="27dp"
+        android:text="风扇"
+        android:textColor="#FFF" />
+
+    <CheckBox
+        android:id="@+id/Ch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ch1"
+        android:layout_alignBottom="@+id/ch1"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/swlian"
+        android:text="报警灯"
+        android:textColor="#FFF" />
+
+    <CheckBox
+        android:id="@+id/Ch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Ch2"
+        android:layout_alignBottom="@+id/Ch2"
+        android:layout_marginRight="141dp"
+        android:layout_toLeftOf="@+id/checkzdy"
+        android:text="门禁"
+        android:textColor="#FFF" />
+
+    <CheckBox
+        android:id="@+id/Ch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/Ch2"
+        android:layout_marginTop="34dp"
+        android:text="通道"
+        android:textColor="#FFF" />
+
+    <CheckBox
+        android:id="@+id/Ch6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Ch2"
+        android:layout_below="@+id/Ch3"
+        android:layout_marginTop="33dp"
+        android:text="通道"
+        android:textColor="#FFF" />
+
+    <CheckBox
+        android:id="@+id/Ch7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Ch6"
+        android:layout_alignBottom="@+id/Ch6"
+        android:layout_alignLeft="@+id/Ch3"
+        android:text="通道"
+        android:textColor="#FFF" />
+
+    <CheckBox
+        android:id="@+id/Ch8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Ch6"
+        android:layout_alignBottom="@+id/Ch6"
+        android:layout_alignLeft="@+id/Ch4"
+        android:text="窗帘"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

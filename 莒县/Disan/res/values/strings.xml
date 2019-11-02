@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Disan</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_logn">LognActivity</string>
+    <string name="title_activity_res">ResActivity</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_activity_jiben">JibenActivity</string>
+    <string name="title_activity_zong">ZongActivity</string>
+    <string name="title_activity_xg">XgActivity</string>
+    <string name="title_activity_kongzhi">KongzhiActivity</string>
+    <string name="title_activity_qing">QIngActivity</string>
+    <string name="title_activity_guan">GuanActivity</string>
+    <string name="title_activity_shezhi">ShezhiActivity</string>
+    
+    <string-array name="dx">
+        <item >&gt;</item>
+        <item >&lt;</item>
+        <item >=</item>
+        
+    </string-array>
+
+</resources>

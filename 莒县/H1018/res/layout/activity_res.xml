@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    tools:context=".ResActivity" >
+
+    <ImageView
+        android:id="@+id/imzca"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/qqa" />
+
+    <ImageView
+        android:id="@+id/Imzcb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="291dp"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/yha" />
+
+    <ImageView
+        android:id="@+id/Imzcc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="119dp"
+        android:src="@drawable/qq" />
+
+    <ImageView
+        android:id="@+id/Imzcd"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/Imzcb"
+        android:layout_centerVertical="true"
+        android:src="@drawable/yh" />
+
+    <Button
+        android:id="@+id/butzc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Imzcb"
+        android:layout_marginLeft="165dp"
+        android:layout_toRightOf="@+id/Imzcb"
+        android:background="#FFF"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/Butfan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Imzcd"
+        android:layout_alignLeft="@+id/butzc"
+        android:background="#FFF"
+        android:text="返回" />
+
+    <TextView
+        android:id="@+id/texians"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Imzcc"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/Imzcc"
+        android:text="正在注册用户信息。。。。。"
+        android:textSize="25sp" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_3"
+    tools:context=".MoshiActivity" >
+
+    <ListView
+        android:id="@+id/listws"
+        android:layout_width="140dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/Listdx"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp" >
+    </ListView>
+
+    <EditText
+        android:id="@+id/edmoshi"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/Listdx"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/Listkz"
+        android:layout_width="140dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/edmoshi" >
+    </ListView>
+
+    <Button
+        android:id="@+id/butmoshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edmoshi"
+        android:layout_alignBottom="@+id/edmoshi"
+        android:layout_toRightOf="@+id/Listkz"
+        android:text="添加到" />
+
+    <EditText
+        android:id="@+id/edittianj"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/butmoshi"
+        android:layout_toRightOf="@+id/butmoshi"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edittianj"
+        android:layout_toRightOf="@+id/edittianj"
+        android:text="模式"
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:id="@+id/chmoshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="21dp"
+        android:text="夜班" />
+
+</RelativeLayout>

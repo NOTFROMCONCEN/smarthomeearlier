@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a_bj2"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="111dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baise"
+            android:text="IP地址："
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baise"
+            android:text="13.1.10.23"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butdl"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="93dp"
+        android:background="@drawable/baise"
+        android:text="登录" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom="@+id/butdl"
+        android:layout_alignLeft="@+id/butdl"
+        android:layout_marginBottom="70dp"
+        android:maxHeight="40dp"
+        android:background="@drawable/a_hd"
+        android:max="100"
+        android:thumb="@drawable/a_kg11" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imdl"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="123dp"
+        android:src="@drawable/yha" />
+
+    <ImageView
+        android:id="@+id/Imdl1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imdl"
+        android:layout_marginLeft="111dp"
+        android:layout_toRightOf="@+id/imdl"
+        android:src="@drawable/yh" />
+
+    <TextView
+        android:id="@+id/tvxianshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imdl"
+        android:layout_below="@+id/imdl"
+        android:layout_marginLeft="169dp"
+        android:layout_marginTop="58dp"
+        android:text="请点击用户头像登录"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imzc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvxianshi"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="39dp"
+        android:layout_toRightOf="@+id/imdl"
+        android:src="@drawable/zc" />
+
+</RelativeLayout>

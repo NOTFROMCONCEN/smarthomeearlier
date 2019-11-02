@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_3"
+    tools:context=".MoshiActivity" >
+
+    <CheckBox
+        android:id="@+id/chmoshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox01"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="模式控制："
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:id="@+id/CheckBox01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/swmoshi"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="27dp"
+        android:text="联动控制："
+        android:textSize="25sp" />
+
+    <Switch
+        android:id="@+id/swmoshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/chmoshi"
+        android:layout_below="@+id/chmoshi"
+        android:layout_marginRight="22dp"
+        android:textOff="在家"
+        android:textOn="离家" />
+
+    <Spinner
+        android:id="@+id/spws"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox01"
+        android:layout_below="@+id/CheckBox01"
+        android:entries="@array/ws" />
+
+    <Spinner
+        android:id="@+id/Spdx"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/swmoshi"
+        android:layout_below="@+id/CheckBox01"
+        android:layout_marginLeft="79dp"
+        android:entries="@array/dx" />
+
+    <EditText
+        android:id="@+id/edlian"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Spdx"
+        android:layout_toRightOf="@+id/CheckBox01"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/Spkz"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CheckBox01"
+        android:layout_toRightOf="@+id/edlian"
+        android:entries="@array/kz" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Spkz"
+        android:layout_below="@+id/Spkz"
+        android:text="风扇"
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:id="@+id/CheckBox02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="173dp"
+        android:layout_marginLeft="36dp"
+        android:text="指令控制："
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/Edzhil"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Spdx"
+        android:layout_alignTop="@+id/CheckBox02"
+        android:layout_marginTop="37dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Edzhil"
+        android:layout_toRightOf="@+id/Edzhil"
+        android:text="动作："
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Edzhil"
+        android:layout_alignRight="@+id/spws"
+        android:text="设备名："
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/Edcun"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/CheckBox02"
+        android:layout_marginTop="34dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/butcun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="存" />
+
+    <EditText
+        android:id="@+id/Edqu"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Spdx"
+        android:layout_below="@+id/Edcun"
+        android:layout_marginTop="29dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/Butqu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Edqu"
+        android:layout_toRightOf="@+id/Edqu"
+        android:text="取" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chmoshi"
+        android:layout_marginLeft="56dp"
+        android:layout_toRightOf="@+id/Edcun"
+        android:text="运行日志："
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listView1"
+        android:layout_below="@+id/listView1"
+        android:text="光照度绘制："
+        android:textSize="25sp" />
+
+    <com.example.e1015.Myview
+        android:id="@+id/myview1"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_below="@+id/TextView03"
+        android:layout_toRightOf="@+id/TextView03" />
+
+</RelativeLayout>

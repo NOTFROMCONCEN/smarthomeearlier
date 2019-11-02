@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bai" >
+
+    <EditText
+        android:id="@+id/edname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="请输入账号" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Edpwd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="82dp"
+        android:ems="10"
+        android:hint="请输入密码" />
+
+    <EditText
+        android:id="@+id/Edqr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edname1"
+        android:layout_below="@+id/edname1"
+        android:layout_marginTop="66dp"
+        android:ems="10"
+        android:hint="请再次输入密码" />
+
+    <EditText
+        android:id="@+id/Edqr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edpwd1"
+        android:layout_below="@+id/Edpwd1"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="请输入二级密码" />
+
+    <Button
+        android:id="@+id/butzhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edqr1"
+        android:layout_below="@+id/Edqr1"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="24dp"
+        android:text="注册" />
+
+</RelativeLayout>

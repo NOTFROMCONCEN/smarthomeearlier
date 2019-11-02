@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_1" >
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/butjiben"
+        tools:context=".ZongActivity" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/logo_1" />
+
+    <Button
+        android:id="@+id/butjiben"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Bumoshi"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="22dp"
+        android:background="#0000ff"
+        android:text="采集数据"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/Bumoshi"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/pager"
+        android:background="#0000ff"
+        android:text="情景模式"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/Buttongji"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bumoshi"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/pager"
+        android:background="#0000ff"
+        android:text="统计数据"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/Butshezhi"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Buttongji"
+        android:layout_below="@+id/Buttongji"
+        android:layout_marginTop="36dp"
+        android:background="#0000ff"
+        android:text="系统设置"
+        android:textColor="#fff" />
+
+</RelativeLayout>

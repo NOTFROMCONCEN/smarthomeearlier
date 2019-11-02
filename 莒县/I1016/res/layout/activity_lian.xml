@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LianActivity" >
+
+    <CheckBox
+        android:id="@+id/chdang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="133dp"
+        android:text="当"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/spws"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chdang"
+        android:layout_toRightOf="@+id/chdang"
+        android:entries="@array/ws" />
+
+    <Spinner
+        android:id="@+id/Spdx"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chdang"
+        android:layout_marginLeft="103dp"
+        android:layout_toRightOf="@+id/chdang"
+        android:entries="@array/dx" />
+
+    <EditText
+        android:id="@+id/edlian"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Spdx"
+        android:layout_toRightOf="@+id/Spdx"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/butxz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edlian"
+        android:layout_toRightOf="@+id/edlian"
+        android:text="选择执行器件" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.disan"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.disan.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.disan.LognActivity"
+            android:label="@string/title_activity_logn" >
+        </activity>
+        <activity
+            android:name="com.example.disan.ResActivity"
+            android:label="@string/title_activity_res" >
+        </activity>
+        <activity
+            android:name="com.example.disan.JibenActivity"
+            android:label="@string/title_activity_jiben" >
+        </activity>
+        <activity
+            android:name="com.example.disan.ZongActivity"
+            android:label="@string/title_activity_zong" >
+        </activity>
+        <activity
+            android:name="com.example.disan.XgActivity"
+            android:label="@string/title_activity_xg" >
+        </activity>
+        <activity
+            android:name="com.example.disan.KongzhiActivity"
+            android:label="@string/title_activity_kongzhi" >
+        </activity>
+        <activity
+            android:name="com.example.disan.QIngActivity"
+            android:label="@string/title_activity_qing" >
+        </activity>
+        <activity
+            android:name="com.example.disan.GuanActivity"
+            android:label="@string/title_activity_guan" >
+        </activity>
+        <activity
+            android:name="com.example.disan.ShezhiActivity"
+            android:label="@string/title_activity_shezhi" >
+        </activity>
+    </application>
+
+</manifest>

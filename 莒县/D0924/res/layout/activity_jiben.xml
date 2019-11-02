@@ -1,0 +1,307 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d_bj"
+    tools:context=".JibenActivity" >
+
+    <ImageView
+        android:id="@+id/imfh"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/d_fh" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/imfh"
+        android:layout_toRightOf="@+id/imfh"
+        android:src="@drawable/d_cgq" />
+
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/imfh"
+        android:background="@drawable/d_bj1"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="燃气"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/gridLayout1"
+        android:layout_marginRight="187dp"
+        android:background="@drawable/d_bj1"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="气压"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout3"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginRight="126dp"
+        android:layout_toLeftOf="@+id/gridLayout2"
+        android:background="@drawable/d_bj1"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="光照"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout01"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/gridLayout3"
+        android:background="@drawable/d_bj1"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="湿度"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout02"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/gridLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/d_bj1"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="温度"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout03"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/gridLayout3"
+        android:layout_below="@+id/gridLayout3"
+        android:background="@drawable/d_bj1"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Pm2.5"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout04"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/GridLayout03"
+        android:layout_below="@+id/GridLayout03"
+        android:background="@drawable/d_bj1"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Co2"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout05"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/gridLayout2"
+        android:layout_alignTop="@+id/GridLayout01"
+        android:background="@drawable/d_bj1"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/TextView13"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="烟雾"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout06"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/GridLayout05"
+        android:layout_alignTop="@+id/GridLayout04"
+        android:background="@drawable/d_bj1"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/TextView16"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="人体红外"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text9"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="无人"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </GridLayout>
+
+    <com.example.d0924.time
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/GridLayout06"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

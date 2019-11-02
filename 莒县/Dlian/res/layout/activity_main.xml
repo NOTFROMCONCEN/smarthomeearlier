@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bja"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/loga" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="请输入账号"
+        android:textColorHint="#FFF" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/etname"
+        android:layout_alignLeft="@+id/imageView1"
+        android:background="#FFF" />
+
+    <EditText
+        android:id="@+id/etpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etname"
+        android:layout_below="@+id/etname"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:textColorHint="#FFF" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/etpwd"
+        android:layout_alignLeft="@+id/imageView1"
+        android:background="#FFF" />
+
+    <EditText
+        android:id="@+id/etip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etname"
+        android:layout_below="@+id/etname"
+        android:layout_marginTop="99dp"
+        android:ems="10"
+        android:hint="请输入IP"
+        android:textColorHint="#FFF" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/etip"
+        android:layout_alignLeft="@+id/textView1"
+        android:background="#FFF" />
+
+    <ImageView
+        android:id="@+id/ivjzmm"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/etip"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/jzmma" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivjzmm"
+        android:layout_centerHorizontal="true"
+        android:text="记住密码"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btndl"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn"
+        android:text="登录"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btnres"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btndl"
+        android:layout_below="@+id/btndl"
+        android:background="#00000000"
+        android:text="注册"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

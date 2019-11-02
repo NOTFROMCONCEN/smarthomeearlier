@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.b1008"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.b1008.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.b1008.JinduActivity"
+            android:label="@string/title_activity_jindu" >
+        </activity>
+        <activity
+            android:name="com.example.b1008.ZongActivity"
+            android:label="@string/title_activity_zong" >
+        </activity>
+        <activity
+            android:name="com.example.b1008.JibenActivity"
+            android:label="@string/title_activity_jiben" >
+        </activity>
+        <activity
+            android:name="com.example.b1008.KzActivity"
+            android:label="@string/title_activity_kz" >
+        </activity>
+        <activity
+            android:name="com.example.b1008.LianActivity"
+            android:label="@string/title_activity_lian" >
+        </activity>
+        <activity
+            android:name="com.example.b1008.HuiActivity"
+            android:label="@string/title_activity_hui" >
+        </activity>
+        <activity
+            android:name="com.example.b1008.Kz1Activity"
+            android:label="@string/title_activity_kz1" >
+        </activity>
+        <activity
+            android:name="com.example.b1008.Lian1Activity"
+            android:label="@string/title_activity_lian1" >
+        </activity>
+        <activity
+            android:name="com.example.b1008.Hui1Activity"
+            android:label="@string/title_activity_hui1" >
+        </activity>
+    </application>
+
+</manifest>

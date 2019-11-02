@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_2"
+    tools:context=".ShujukuActivity" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="112dp" >
+    </ListView>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listView1"
+        android:layout_below="@+id/listView1"
+        android:entries="@array/ws" />
+
+    <Button
+        android:id="@+id/butcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_below="@+id/spinner1"
+        android:text="查找" />
+    <com.example.j0826.Jiugongge
+        android:layout_width="400dp"
+        android:layout_height="400dp"/>
+
+</RelativeLayout>

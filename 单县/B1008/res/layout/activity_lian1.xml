@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lian1Activity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="277dp"
+        android:layout_marginTop="76dp"
+        android:text="房号："
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/telianf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/spws"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="106dp"
+        android:layout_marginTop="44dp"
+        android:entries="@array/ws" />
+
+    <Spinner
+        android:id="@+id/Spdx"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="45dp"
+        android:layout_toLeftOf="@+id/telianf"
+        android:entries="@array/dx" />
+
+    <EditText
+        android:id="@+id/edlian"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spws"
+        android:layout_toRightOf="@+id/spws"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/Spkz"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edlian"
+        android:layout_toRightOf="@+id/edlian"
+        android:entries="@array/kz" />
+
+    <Spinner
+        android:id="@+id/Spkg"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Spdx"
+        android:layout_marginLeft="108dp"
+        android:layout_toRightOf="@+id/edlian"
+        android:entries="@array/kg" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="185dp"
+        android:layout_marginLeft="285dp"
+        android:text="联动开关"
+        android:textSize="25sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_toRightOf="@+id/TextView01" />
+
+</RelativeLayout>

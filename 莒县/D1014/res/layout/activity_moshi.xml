@@ -1,0 +1,348 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d_bj"
+    tools:context=".MoshiActivity" >
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/imqjf"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="57dp"
+        android:src="@drawable/d_qj" />
+
+    <ImageView
+        android:id="@+id/imqjf"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/d_fh" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ImageView01"
+        android:text="执行条件"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="157dp"
+        android:text="执行动作"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView01"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/imqjf"
+        android:text="传感器"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="52dp"
+        android:layout_toRightOf="@+id/imqjf"
+        android:text="条件"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_centerVertical="true"
+        android:text="阀值"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/imqjf"
+        android:text="动作"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:layout_toRightOf="@+id/imqjf"
+        android:text="设备"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/immoshikg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/TextView02"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="64dp"
+        android:src="@drawable/d_g" />
+
+    <Button
+        android:id="@+id/buttemp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView02"
+        android:layout_alignBottom="@+id/TextView02"
+        android:background="@drawable/d_qjm"
+        android:layout_toRightOf="@+id/TextView02"
+        android:text="温度" />
+
+    <Button
+        android:id="@+id/Buthum"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView02"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_marginLeft="53dp"
+        android:layout_toRightOf="@+id/ImageView01"
+        android:background="@drawable/d_qjm"
+        android:text="湿度" />
+
+    <Button
+        android:id="@+id/Butgas"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Buthum"
+        android:layout_alignBottom="@+id/Buthum"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/Buthum"
+        android:background="@drawable/d_qjm"
+        android:text="燃气" />
+
+    <Button
+        android:id="@+id/Butill"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Buthum"
+        android:layout_alignBottom="@+id/Buthum"
+        android:layout_marginLeft="97dp"
+        android:layout_toRightOf="@+id/Buthum"
+        android:background="@drawable/d_qjm"
+        android:text="光照度" />
+
+    <Button
+        android:id="@+id/Butpm25"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butgas"
+        android:layout_alignBottom="@+id/Butgas"
+        android:layout_marginLeft="90dp"
+        android:layout_toRightOf="@+id/Butgas"
+        android:background="@drawable/d_qjm"
+        android:text="Pm2.5" />
+
+    <Button
+        android:id="@+id/Butair"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butill"
+        android:layout_alignBottom="@+id/Butill"
+        android:layout_marginLeft="87dp"
+        android:layout_toRightOf="@+id/Butill"
+        android:background="@drawable/d_qjm"
+        android:text="气压" />
+
+    <Button
+        android:id="@+id/Butsmoke"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butpm25"
+        android:layout_alignBottom="@+id/Butpm25"
+        android:layout_marginLeft="93dp"
+        android:layout_toRightOf="@+id/Butpm25"
+        android:background="@drawable/d_qjm"
+        android:text="烟雾" />
+
+    <Button
+        android:id="@+id/Butco2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butair"
+        android:layout_alignBottom="@+id/Butair"
+        android:layout_marginLeft="109dp"
+        android:layout_toRightOf="@+id/Butair"
+        android:background="@drawable/d_qjm"
+        android:text="Co2" />
+
+    <Button
+        android:id="@+id/Butman"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butco2"
+        android:layout_alignBottom="@+id/Butco2"
+        android:layout_toLeftOf="@+id/immoshikg"
+        android:background="@drawable/d_qjm"
+        android:text="人体红外" />
+
+    <Button
+        android:id="@+id/Butda"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView03"
+        android:layout_toRightOf="@+id/TextView02"
+        android:background="@drawable/d_qjm"
+        android:text="大于" />
+
+    <Button
+        android:id="@+id/Butxiao"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView03"
+        android:layout_toRightOf="@+id/Butgas"
+        android:background="@drawable/d_qjm"
+        android:text="小于" />
+
+    <EditText
+        android:id="@+id/edlian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView04"
+        android:layout_alignBottom="@+id/TextView04"
+        android:layout_alignLeft="@+id/Butda"
+        android:background="@drawable/d_qjm"
+        android:ems="10"
+        android:textSize="25sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/Butdakai"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView05"
+        android:layout_alignLeft="@+id/buttemp"
+        android:background="@drawable/d_qjm"
+        android:text="打开" />
+
+    <Button
+        android:id="@+id/Butguanbi"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView05"
+        android:layout_alignRight="@+id/Butxiao"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/d_qjm"
+        android:text="关闭" />
+
+    <Button
+        android:id="@+id/Butlamp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView06"
+        android:layout_toRightOf="@+id/TextView02"
+        android:background="@drawable/d_qjm"
+        android:text="射灯" />
+
+    <Button
+        android:id="@+id/Butdoor"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView06"
+        android:layout_alignLeft="@+id/Buthum"
+        android:background="@drawable/d_qjm"
+        android:text="门禁" />
+
+    <Button
+        android:id="@+id/Butfan"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butlamp"
+        android:layout_alignBottom="@+id/Butlamp"
+        android:layout_toLeftOf="@+id/Butxiao"
+        android:background="@drawable/d_qjm"
+        android:text="风扇" />
+
+    <Button
+        android:id="@+id/Butbjd"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butfan"
+        android:layout_alignBottom="@+id/Butfan"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/d_qjm"
+        android:text="报警灯" />
+
+    <Button
+        android:id="@+id/Butcha"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butbjd"
+        android:layout_alignBottom="@+id/Butbjd"
+        android:layout_alignLeft="@+id/Butill"
+        android:background="@drawable/d_qjm"
+        android:text="智能插座" />
+
+    <Button
+        android:id="@+id/Buttv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butfan"
+        android:layout_alignBottom="@+id/Butfan"
+        android:layout_alignLeft="@+id/Butair"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/d_qjm"
+        android:text="电视" />
+
+    <Button
+        android:id="@+id/Butdvd"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butbjd"
+        android:layout_alignBottom="@+id/Butbjd"
+        android:layout_alignLeft="@+id/Butsmoke"
+        android:layout_marginLeft="38dp"
+        android:background="@drawable/d_qjm"
+        android:text="DvD" />
+
+    <Button
+        android:id="@+id/Butjias"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butdvd"
+        android:layout_alignBottom="@+id/Butdvd"
+        android:layout_toRightOf="@+id/Butco2"
+        android:background="@drawable/d_qjm"
+        android:text="加湿器" />
+
+    <Button
+        android:id="@+id/Butkt"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butdvd"
+        android:layout_alignBottom="@+id/Butdvd"
+        android:layout_alignRight="@+id/immoshikg"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/d_qjm"
+        android:text="空调" />
+
+</RelativeLayout>

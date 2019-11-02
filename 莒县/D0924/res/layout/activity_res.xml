@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d_bj"
+    tools:context=".ResActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="317dp"
+        android:layout_marginTop="61dp"
+        android:src="@drawable/d_zc" />
+
+    <EditText
+        android:id="@+id/edname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="请输入账号"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/Edqr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edpwd1"
+        android:layout_below="@+id/Edpwd1"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="请再次输入密码"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/Edpwd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edname1"
+        android:layout_below="@+id/edname1"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <Button
+        android:id="@+id/butzc"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Edqr"
+        android:layout_below="@+id/Edqr"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/blue"
+        android:text="注册"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tedl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/butzc"
+        android:layout_below="@+id/butzc"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="30dp"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+</RelativeLayout>

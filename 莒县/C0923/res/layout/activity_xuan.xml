@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XuanActivity" >
+
+    <ImageView
+        android:id="@+id/imjiben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="83dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/Imliandong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="154dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/Immoshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Imliandong"
+        android:layout_below="@+id/Imliandong"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/Imhuitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Imliandong"
+        android:layout_below="@+id/Imliandong"
+        android:layout_marginTop="105dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textjiben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imjiben"
+        android:layout_toRightOf="@+id/imjiben"
+        android:text="基本"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Textliandong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Immoshi"
+        android:layout_toRightOf="@+id/Imliandong"
+        android:text="联动"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Temoshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Immoshi"
+        android:layout_alignLeft="@+id/textjiben"
+        android:text="模式"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Tehuitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Imhuitu"
+        android:layout_alignLeft="@+id/Textliandong"
+        android:text="绘图"
+        android:textSize="25sp" />
+    <com.example.c0923.time
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp" />
+
+</RelativeLayout>

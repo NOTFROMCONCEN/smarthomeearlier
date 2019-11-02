@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_1"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="107dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baise"
+            android:hint="IP地址"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/Edpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baise"
+            android:hint="密码"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_marginBottom="22dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/Edname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baise"
+            android:hint="用户名"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butzc"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/baise"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/Butxg"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/butzc"
+        android:layout_alignBottom="@+id/butzc"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/baise"
+        android:text="修改密码" />
+
+    <Button
+        android:id="@+id/Buttc"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Butxg"
+        android:layout_below="@+id/Butxg"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/baise"
+        android:text="退出" />
+
+    <Button
+        android:id="@+id/Butdl"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Buttc"
+        android:layout_alignBottom="@+id/Buttc"
+        android:layout_alignLeft="@+id/butzc"
+        android:background="@drawable/baise"
+        android:text="登录" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hui1Activity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:text="房号："
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvhuif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <com.example.b1008.Myview
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvhuif" />
+
+</RelativeLayout>

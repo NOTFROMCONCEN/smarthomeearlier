@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_res"></string>
+    <string name="title_activity_zhu"></string>
+    <string name="title_activity_jiben"></string>
+    <string name="title_activity_kz"></string>
+    <string name="title_activity_moshi"></string>
+
+</resources>

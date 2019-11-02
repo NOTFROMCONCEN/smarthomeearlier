@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/ednamex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="请输入账号" />
+
+    <EditText
+        android:id="@+id/Edpwdx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ednamex"
+        android:ems="10"
+        android:hint="请输入旧密码" />
+
+    <EditText
+        android:id="@+id/Edqrx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Edpwdx"
+        android:ems="10"
+        android:hint="请输入新密码" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/butxiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Edqrx"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="23dp"
+        android:text="修改" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XuanActivity" >
+
+    <ImageView
+        android:id="@+id/imjiben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="283dp"
+        android:layout_marginTop="112dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/Immoshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imjiben"
+        android:layout_below="@+id/imjiben"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/Imhui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imjiben"
+        android:layout_below="@+id/Imlian"
+        android:layout_marginTop="89dp"
+        android:src="@drawable/ic_launcher" />
+    <com.example.c1005.time
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/Imlian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Immoshi"
+        android:layout_below="@+id/imjiben"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textjiben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Immoshi"
+        android:layout_toRightOf="@+id/imjiben"
+        android:text="基本"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Textliandong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Imhui"
+        android:layout_toRightOf="@+id/Imlian"
+        android:text="联动"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Textmsohi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Immoshi"
+        android:layout_alignLeft="@+id/textjiben"
+        android:text="模式"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Texthui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Imhui"
+        android:layout_alignLeft="@+id/Textliandong"
+        android:text="绘图"
+        android:textSize="25sp" />
+
+</RelativeLayout>

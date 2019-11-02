@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg6"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="416dp"
+        android:layout_marginTop="127dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/butzc"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="84dp"
+        android:layout_marginLeft="109dp"
+        android:background="@drawable/register"
+        android:text="注册"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/Butdl"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/butzc"
+        android:layout_alignBottom="@+id/butzc"
+        android:layout_marginLeft="126dp"
+        android:layout_toRightOf="@+id/butzc"
+        android:background="@drawable/register"
+        android:text="登录"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/Butxg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/butzc"
+        android:layout_alignBottom="@+id/butzc"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="170dp"
+        android:background="@drawable/register"
+        android:text="修改"
+        android:textColor="#fff" />
+
+    <com.example.disan.time
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:textSize="25dp" />
+
+</RelativeLayout>

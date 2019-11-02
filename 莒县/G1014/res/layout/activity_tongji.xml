@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj_1"
+    tools:context=".TongjiActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="238dp"
+        android:layout_marginTop="24dp"
+        android:background="#0000ff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="光照"
+        android:textColor="#FFF"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="#0000ff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="温度"
+        android:textColor="#FFF"
+        android:textSize="25dp" />
+
+    <com.example.g1014.Myview
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignRight="@+id/TextView01"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="55dp" />
+
+</RelativeLayout>
