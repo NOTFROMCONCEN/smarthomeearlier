@@ -1,4 +1,7 @@
-# 智能家居控制系统（技能大赛）赛题Demo备份
+# 仓库停止维护
+
+
+https://ws1.sinaimg.cn/large/005ZFreDly1g9qiq778erj31hc0u0nm1.jpg![输入图片说明](https://ws1.sinaimg.cn/large/005ZFreDly1g9qiq778erj31hc0u0nm1.jpg "在这里输入图片标题")
 
 | 时间 | 版本 | 上传？ | 删除？ | 移动？ |
 | ---- | ---- | ------ | ------ | ------ |
